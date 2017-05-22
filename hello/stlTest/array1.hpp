@@ -14,7 +14,7 @@ void printf_array(std::array<int,10> &data)
 }
 void test_array1()
 {
-    std::array<int,10> a={11,22,33,44};
+    std::array<int,10> a={11,22,33,44,55,66,77,88,99};
     printf_array(a);
 
     a.back()= 999999;

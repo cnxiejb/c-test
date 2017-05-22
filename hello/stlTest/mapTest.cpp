@@ -8,7 +8,6 @@ xieMap::xieMap()
 void xieMap::insertEntryTest()
 {
     typedef std::map<std::string,float> Coll;
-    Coll coll;
 
     coll.insert({"cott",22.3});
     coll.insert(Coll::value_type("coott",32.3));

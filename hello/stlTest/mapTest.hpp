@@ -7,6 +7,8 @@ class xieMap
     public:
          xieMap();
          void insertEntryTest();
+    private:
+         std::map<std::string,float> coll;
 };
 
 #endif
