@@ -1,15 +1,19 @@
-#include<iostream>
-#include<vector>
-#include<algorithm>
-
-#include "stlTest/array1.hpp"
-#include "stlTest/printTools.hpp"
+#include "stlTest/array_test.hpp"
 #include "stlTest/vector_test.hpp"
 
 int main()
 {
-    Solution *ms= new Solution();
+    XieVector *ms= new XieVector();
     ms->SPrintf();
     delete ms;
     ms=NULL;
+
+/*    XieArray *ap = new XieArray();*/
+    //ap->Traversal();
+    //ap->Reserve();
+    //delete ap;
+    /*ap=NULL;*/
+
+    return 0;
 }
+

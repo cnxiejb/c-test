@@ -2,13 +2,18 @@
 #define VECTOR_TEST_H_
 #include<vector>
 #include<string>
-class Solution
+class XieVector
 {
     public:
-        Solution();
+        XieVector();
+        ~XieVector();
+
         void SPrintf();
+
     private:
-        std::vector<std::string> coll;
-        std::vector<int> s_data;
+        void printfClassInfo();
+        void removeEqualVal(int);
+    private:
+        std::vector<int> vdataInt;
 };
 #endif
