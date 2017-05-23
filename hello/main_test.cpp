@@ -1,12 +1,18 @@
 #include "stlTest/array_test.hpp"
 #include "stlTest/vector_test.hpp"
-
+#include "stlTest/list_test.hpp"
+#include "stlTest/set_test.hpp"
 int main()
 {
-    XieVector *ms= new XieVector();
-    ms->SPrintf();
-    delete ms;
-    ms=NULL;
+/*    XieList *lp= new XieList();*/
+    //lp->Traversal();
+    //delete lp;
+    /*lp=NULL;*/
+
+/*    XieVector *ms= new XieVector();*/
+    //ms->SPrintf();
+    //delete ms;
+    /*ms=NULL;*/
 
 /*    XieArray *ap = new XieArray();*/
     //ap->Traversal();
@@ -14,6 +20,11 @@ int main()
     //delete ap;
     /*ap=NULL;*/
 
+    XieSet *sp= new XieSet();
+    //sp->Traversal();
+    delete sp;
+    sp=NULL;
+    
     return 0;
 }
 
