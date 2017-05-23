@@ -11,6 +11,7 @@ xieMap::xieMap()
 xieMap::~xieMap()
 {
     cout<<"xieMap uninit"<<endl;
+    mdata.clear();
 }
 void xieMap::Traversal()
 {
@@ -46,12 +47,12 @@ void xieMap::removeEntryTest()
        mdata.erase(pos);
    
    float val = 100;
-  for(auto pos = mdata.begin();pos != mdata.end();)
-  {
-      if(pos->second == val)
-          pos = mdata.erase(pos);
-      else
-          ++pos;
-  }
+   for(auto pos = mdata.begin();pos != mdata.end();)
+   {
+       if(pos->second == val)
+           pos = mdata.erase(pos);
+       else
+           ++pos;
+   }
    Traversal();
 }
