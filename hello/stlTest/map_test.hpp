@@ -6,9 +6,13 @@ class xieMap
 {
     public:
          xieMap();
-         void insertEntryTest();
+         ~xieMap();
     private:
-         std::map<std::string,float> coll;
+         void insertEntryTest();
+         void removeEntryTest();
+         void Traversal();
+    private:
+         std::map<std::string,float> mdata;
 };
 
 #endif

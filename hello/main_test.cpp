@@ -2,6 +2,8 @@
 #include "stlTest/vector_test.hpp"
 #include "stlTest/list_test.hpp"
 #include "stlTest/set_test.hpp"
+#include "stlTest/map_test.hpp"
+
 int main()
 {
 /*    XieList *lp= new XieList();*/
@@ -20,10 +22,14 @@ int main()
     //delete ap;
     /*ap=NULL;*/
 
-    XieSet *sp= new XieSet();
-    //sp->Traversal();
-    delete sp;
-    sp=NULL;
+    /*XieSet *sp= new XieSet();*/
+    ////sp->Traversal();
+    //delete sp;
+    /*sp=NULL;*/
+
+    xieMap *mp = new xieMap();
+    delete mp;
+    mp=NULL;
     
     return 0;
 }
