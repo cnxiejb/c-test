@@ -1,7 +1,8 @@
 #include<algorithm>
 #include<iostream>
+
 #include "vector_test.hpp"
-#include "printTools.hpp"
+#include "../tools/printTools.hpp"
 
 using namespace std;
 
@@ -41,20 +42,18 @@ void XieVector::removeEqualVal(int val)
 void XieVector::SPrintf()
 {
     //method 1
-    for(auto &elemt : vdataInt)
-    {
+    for(auto &elemt : vdataInt){
         std::cout<<elemt<<",";
     }
     std::cout<<std::endl;
 
     removeEqualVal(3);
     //method2
-    for_each(vdataInt.begin(),vdataInt.end(),PrintfInt());
-    std::cout<<std::endl;
+    PrintfTool<decltype(vdataInt)> xie_printf;
+    xie_printf(vdataInt);
     
     //method3
-    for(auto iter=vdataInt.begin();iter != vdataInt.end();++iter)
-    {
+    for(auto iter=vdataInt.begin();iter != vdataInt.end();++iter){
         cout<<*iter<<",";
     }
     cout<<endl;

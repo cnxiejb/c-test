@@ -1,8 +1,10 @@
+#include<memory>//for shared_ptr
 #include "stlTest/array_test.hpp"
 #include "stlTest/vector_test.hpp"
 #include "stlTest/list_test.hpp"
 #include "stlTest/set_test.hpp"
 #include "stlTest/map_test.hpp"
+#include "stlTest/unorderset_test.hpp"
 
 int main()
 {
@@ -11,10 +13,8 @@ int main()
     //delete lp;
     /*lp=NULL;*/
 
-/*    XieVector *ms= new XieVector();*/
-    //ms->SPrintf();
-    //delete ms;
-    /*ms=NULL;*/
+    std::shared_ptr<XieVector> vp=std::make_shared<XieVector>();
+    vp->SPrintf();
 
 /*    XieArray *ap = new XieArray();*/
     //ap->Traversal();
@@ -27,10 +27,13 @@ int main()
     //delete sp;
     /*sp=NULL;*/
 
-    xieMap *mp = new xieMap();
-    delete mp;
-    mp=NULL;
+    /*xieMap *mp = new xieMap();*/
+    //delete mp;
+    /*mp=NULL;*/
     
+/*    unXieSet *usp=new unXieSet();*/
+    //delete usp;
+    /*usp=NULL;*/
     return 0;
 }
 
