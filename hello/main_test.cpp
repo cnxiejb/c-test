@@ -5,6 +5,7 @@
 #include "stlTest/set_test.hpp"
 #include "stlTest/map_test.hpp"
 #include "stlTest/unorderset_test.hpp"
+#include "stlTest/binder_test.hpp"
 
 int main()
 {
@@ -13,9 +14,11 @@ int main()
     //delete lp;
     /*lp=NULL;*/
 
-    std::shared_ptr<XieVector> vp=std::make_shared<XieVector>();
-    vp->SPrintf();
+/*    std::shared_ptr<XieVector> vp=std::make_shared<XieVector>();*/
+    /*vp->SPrintf();*/
 
+    std::shared_ptr<XieBinder> bp=std::make_shared<XieBinder>();
+    bp->mathOperationTest();
 /*    XieArray *ap = new XieArray();*/
     //ap->Traversal();
     //ap->Reserve();
