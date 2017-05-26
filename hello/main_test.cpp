@@ -15,10 +15,10 @@ int main()
     /*lp=NULL;*/
 
 /*    std::shared_ptr<XieVector> vp=std::make_shared<XieVector>();*/
-    /*vp->SPrintf();*/
+    //vp->SPrintf();
 
-    std::shared_ptr<XieBinder> bp=std::make_shared<XieBinder>();
-    bp->mathOperationTest();
+    //std::shared_ptr<XieBinder> bp=std::make_shared<XieBinder>();
+    /*bp->mathOperationTest();*/
 /*    XieArray *ap = new XieArray();*/
     //ap->Traversal();
     //ap->Reserve();
@@ -37,6 +37,8 @@ int main()
 /*    unXieSet *usp=new unXieSet();*/
     //delete usp;
     /*usp=NULL;*/
+    void count1_test();
+    count1_test();
     return 0;
 }
 
